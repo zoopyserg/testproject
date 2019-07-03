@@ -1,0 +1,76 @@
+# Capefile is the setup file for Caperoma management system.
+# More info about Caperoma can be found here: http://caperoma.io
+
+# Use YAML to set required properties.
+
+# --- PROPERTIES:
+#
+# github_repo: <a git path to your github repo>
+#
+# Set a git repo, into which all the pull requests will be sent.
+# You need to have a right to make pull requests into this repo.
+#
+# Example:
+# github_repo: owner/repository
+#
+# Uncomment this and change to your repo:
+github_repo: zoopyserg/testproject
+
+# jira_url: <a full URL for your Jira server>
+# If jira_url is not set, Jira will not be used with your project.
+#
+# Example:
+# jira_url: https://example.atlassian.net/
+#
+# Uncomment this and change to your Jira url if you use Jira:
+jira_url: https://zoopyserg.atlassian.net/
+
+# Then run "caperoma sync" to fetch your Jira projects.
+# Then run "caperoma projects" to see the list of fetched projects.
+
+# jira_project_id: <the ID of this project in your Jira system>
+#
+# If you don't know its Jira ID, run 'caperoma sync' and then 'caperoma projects'.
+# 'caperoma projects' will have something like this:
+# Your awesome project (Jira project ID: 12345)
+# So your jira_project_id in this case will be 12345.
+#
+# If jira_project_id is not set, Jira will not be used with your project.
+#
+# Example:
+# jira_project_id: 12345
+# 
+# Uncomment this and change to your Jira Project ID if you use Jira:
+# jira_project_id: 12345
+jira_project_id: 10000
+
+# jira_issue_ids: the issue ids of different types of issues in your Jira system.
+# Put appropriate IDs here.
+# If unsure, run "caperoma get_issue_ids" (doesn't work for now).
+# Keep in mind, that these IDs may be different if you switch to a different Jira server.
+#
+# Example (uncomment if you use Jira)
+# jira_issue_type_ids:
+#   feature: 10101
+#   bug: 10103
+#   chore: 10100
+#   fix: 10101
+#   meeting: 10100
+jira_issue_type_ids:
+  feature: 10101
+  bug: 10103
+  chore: 10100
+  fix: 10101
+  meeting: 10100
+
+# jira_transition_ids: Transition ids for Jira ()
+# To get them, run "caperoma get_transition_ids" (doesn't work for now).
+# Can also be taken here: <URL>
+#
+# Example (uncomment if you use Jira):
+jira_transition_ids:
+  todo: 11
+  in_progress: 21
+  done: 31
+
+# Pivotal URL:
