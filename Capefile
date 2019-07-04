@@ -83,8 +83,8 @@ pivotal_tracker_project_id: 2361193
 # However if you DON'T provide this flag (hense, your local "feature" has no pivotal ID assigned to it), pivotal has no idea that you started working on it.
 # Thus, these options allow you to CREATE a feature/bug/chore in Pivotal (if you didn't use --pivotal_issue_id flag to provide PT task, Caperoma will create a new task inside your project use its id)
 # OMFG how hard it is to explain. The point is that if you provide --pivotal_issue_id - caperoma will use that issue_id. But if you don't provide --pivotal_issue_id flag, with these options you can choose if you want Caperoma to CREATE that issue inside of your pivotal project, or NOT CREATE (by setting true/false on each of them).
-create_features_in_pivotal_if_they_are_not_there_yet: true
-create_bugs_in_pivotal_if_they_are_not_there_yet: true
-create_chores_in_pivotal_if_they_are_not_there_yet: true
-create_fixes_in_pivotal_as_chores_if_they_are_not_there_yet: false
-create_meetings_in_pivotal_as_chores_if_they_are_not_there_yet: false
+create_features_in_pivotal: false
+create_bugs_in_pivotal: true
+create_chores_in_pivotal: true
+create_fixes_in_pivotal_as_chores: false
+create_meetings_in_pivotal_as_chores: false
