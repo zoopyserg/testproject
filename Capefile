@@ -78,13 +78,14 @@ jira_transition_ids:
 # Pivotal Tracker Project ID:
 pivotal_tracker_project_id: 2361193
 
-# Once you run a command like "caperoma feature", you start working on a feature locally.
-# Caperoma will use the ID of the Pivotal task that you provide with a flag --pivotal_issue_id.
-# However if you DON'T provide this flag (hense, your local "feature" has no pivotal ID assigned to it), pivotal has no idea that you started working on it.
-# Thus, these options allow you to CREATE a feature/bug/chore in Pivotal (if you didn't use --pivotal_issue_id flag to provide PT task, Caperoma will create a new task inside your project use its id)
-# OMFG how hard it is to explain. The point is that if you provide --pivotal_issue_id - caperoma will use that issue_id. But if you don't provide --pivotal_issue_id flag, with these options you can choose if you want Caperoma to CREATE that issue inside of your pivotal project, or NOT CREATE (by setting true/false on each of them).
-create_features_in_pivotal_if_they_are_not_there_yet: true
-create_bugs_in_pivotal_if_they_are_not_there_yet: true
-create_chores_in_pivotal_if_they_are_not_there_yet: true
-create_fixes_in_pivotal_as_chores_if_they_are_not_there_yet: false
-create_meetings_in_pivotal_as_chores_if_they_are_not_there_yet: false
+# Which tasks to create on PivotalTracker:
+# "caperoma feature" takes a parameter -p (pivotal_issue_id).
+# When it's present, an issue on Pivotal with this id will be marked as started or finished when you work on it.
+# However, if you don't provide pivotal_issue_id, the system will think that there is no such task on Pivotal.
+# This is why you can create this task on Pivotal automatically.
+# With these settings you can set which tasks you want to automatically create on Pivotal if it doesn't already have a pivotal id.
+create_features_in_pivotal: true
+create_bugs_in_pivotal: true
+create_chores_in_pivotal: true
+create_fixes_in_pivotal_as_chores: false
+create_meetings_in_pivotal_as_chores: false
