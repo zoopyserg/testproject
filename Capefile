@@ -84,7 +84,7 @@ pivotal_tracker_project_id: 2361193
 # However, if you don't provide pivotal_issue_id, the system will think that there is no such task on Pivotal.
 # This is why you can create this task on Pivotal automatically.
 # With these settings you can set which tasks you want to automatically create on Pivotal if it doesn't already have a pivotal id.
-create_features_in_pivotal: false
+create_features_in_pivotal: true
 create_bugs_in_pivotal: true
 create_chores_in_pivotal: true
 create_fixes_in_pivotal_as_chores: false
