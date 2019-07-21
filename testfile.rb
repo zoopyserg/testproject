@@ -3,10 +3,8 @@
 class JoJoJo
   def bad_practice_one
     a = { 'one' => 'two' }
-    b = method({:hello => 'world'})
+    b = method(hello: 'world')
   end
 
-  def method(par)
-
-  end
+  def method(par); end
 end
