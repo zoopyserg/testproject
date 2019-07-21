@@ -24,7 +24,7 @@ github_repo: zoopyserg/testproject
 # jira_url: https://example.atlassian.net/
 #
 # Uncomment this and change to your Jira url if you use Jira:
-jira_url: https://zoopyserg.atlassian.net/
+jira_url: https://sergevinogradoff.atlassian.net/
 
 # Then run "caperoma sync" to fetch your Jira projects.
 # Then run "caperoma projects" to see the list of fetched projects.
@@ -58,11 +58,11 @@ jira_project_id: 10000
 #   fix: 10101
 #   meeting: 10100
 jira_issue_type_ids:
-  feature: 10101
-  bug: 10103
-  chore: 10100
-  fix: 10101
-  meeting: 10100
+  feature: 10001
+  bug: 10004
+  chore: 10001
+  fix: 10001
+  meeting: 10001
 
 # jira_transition_ids: Transition ids for Jira ()
 # To get them, run "caperoma get_transition_ids" (doesn't work for now).
