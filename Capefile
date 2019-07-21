@@ -87,5 +87,5 @@ pivotal_tracker_project_id: 2361193
 create_features_in_pivotal: true
 create_bugs_in_pivotal: true
 create_chores_in_pivotal: true
-create_fixes_in_pivotal_as_chores: false
-create_meetings_in_pivotal_as_chores: false
+create_fixes_in_pivotal_as_chores: true
+create_meetings_in_pivotal_as_chores: true
